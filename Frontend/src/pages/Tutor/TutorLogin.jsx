@@ -1,5 +1,5 @@
-import Img from '../../assets/tutor.png'
-import ehz from '../../assets/Ehizua.png'
+import Img from '../../../assets/tutor.png'
+import ehz from '../../../assets/Ehizua.png'
 
 const TutorLogin = () => {
   return (

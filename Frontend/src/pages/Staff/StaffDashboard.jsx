@@ -1,24 +1,22 @@
 import { Link } from "react-router-dom"
-import Image from "../../assets/Ehizua.png"
-import person from "../../assets/person1.png"
-import '../../styles/studentlogin.css'
+import Image from "../../../assets/Ehizua.png"
+import person from "../../../assets/person1.png"
+import '../../../styles/studentlogin.css'
 import {FcGoogle} from 'react-icons/fc'
 
-const AdminLogin = () => {
+const StaffDashboard = () => {
   return (
    <section className=''>
     <nav className='flex items-center h-[108px] w-full justify-center lg:justify-between bg-white border-b lg:px-[200px]'>
       <div className=" flex items-center w-[200px] h-[30px]"><img src={Image} className="w-[130px] lg:w-[200px]" alt="ehizua"/></div>
       <div className="flex items-center gap-2 lg:gap-5">
-        <Link className="rounded-2xl px-2 py-3 lg:px-6 lg:py-3 bg-sky-700 text-white text-[7px] lg:text-[20px]" to="/">Back Home</Link>
-        <Link className="rounded-2xl px-2  py-3 lg:px-6 lg:py-3 bg-sky-700 text-white text-[7px] lg:text-[20px]" to="/studentlogin">Student Login</Link>
       </div>
     </nav>
       
       <section className="flex justify-center items-center">
         <div className="w-[300px] h-screen lg:w-[900px] mt-11">
           <div className="flex justify-center flex-col items-center">
-            <h1 className="font-extrabold lg:text-[48px]">Good Evening, Admin</h1>
+            <h1 className="font-extrabold lg:text-[48px]">Good Evening Staff</h1>
 
 
              <div className="flex flex-col relative items-center space-y-[70px]">
@@ -64,4 +62,4 @@ const AdminLogin = () => {
   )
 }
 
-export default AdminLogin;
+export default StaffDashboard;
