@@ -1,4 +1,4 @@
-import Img from '../../assets/tutor.png'
+import Img from '../../assets/student.png'
 import ehz from '../../assets/Ehizua.png'
 const  SchoolStudentLogin = () => {
     return (
