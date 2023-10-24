@@ -13,7 +13,7 @@ const  SchoolStudentLogin = () => {
         </div>
         <div className="h-[70%]  w-[100%] lg:w-7/12 lg:h-[100vh] bg-[#134574] flex flex-col pt-[150px] lg:pt-[60px]">
  
-           <div className="fixed top-[60px] right-[45%]  lg:relative lg:top-0 lg:right-0 h-[10%] text-[#134574] flex font-bold lg:text-white text-center justify-center align-middle items-center text-[15px] lg:text-[34px]">
+           <div className="relative top-[60px] right-[45%]  lg:relative lg:top-0 lg:right-0 h-[10%] text-[#134574] flex font-bold lg:text-white text-center justify-center align-middle items-center text-[15px] lg:text-[34px]">
              LOGIN
            </div>
            
