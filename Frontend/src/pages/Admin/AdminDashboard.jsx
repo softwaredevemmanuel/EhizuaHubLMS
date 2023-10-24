@@ -1,31 +1,31 @@
 import { Link } from "react-router-dom"
-import Image from "../../assets/Ehizua.png"
-import person from "../../assets/person1.png"
-import '../../styles/studentlogin.css'
+import Image from "../../../assets/Ehizua.png"
+import person from "../../../assets/person1.png"
+import '../../../styles/studentlogin.css'
+import {FcGoogle} from 'react-icons/fc'
 
-
-const StudentLogin = () => {
+const AdminDashboard = () => {
   return (
    <section className=''>
     <nav className='flex items-center h-[108px] w-full justify-center lg:justify-between bg-white border-b lg:px-[200px]'>
       <div className=" flex items-center w-[200px] h-[30px]"><img src={Image} className="w-[130px] lg:w-[200px]" alt="ehizua"/></div>
       <div className="flex items-center gap-2 lg:gap-5">
         <Link className="rounded-2xl px-2 py-3 lg:px-6 lg:py-3 bg-sky-700 text-white text-[7px] lg:text-[20px]" to="/">Back Home</Link>
-        <Link className="rounded-2xl px-2  py-3 lg:px-6 lg:py-3 bg-sky-700 text-white text-[7px] lg:text-[20px]" to="/adminlogin">Staff Login</Link>
+        <Link className="rounded-2xl px-2  py-3 lg:px-6 lg:py-3 bg-sky-700 text-white text-[7px] lg:text-[20px]" to="/studentlogin">Student Login</Link>
       </div>
     </nav>
       
       <section className="flex justify-center items-center">
         <div className="w-[300px] h-screen lg:w-[900px] mt-11">
           <div className="flex justify-center flex-col items-center">
-            <h1 className="font-extrabold lg:text-[48px]">Good Evening,  Student</h1>
+            <h1 className="font-extrabold lg:text-[48px]">Good Evening, Admin</h1>
 
 
              <div className="flex flex-col relative items-center space-y-[70px]">
                <div className="absolute border z-20 rounded-full shadow-slate-700"><img src={person} className="rounded-full w-[100px] h-[100px] lg:h-[128px] lg:w-[128px]"/></div>
                   
                <div className="relative w-[300px] z-10 h-[400px] sm:w-[600px]  lg:w-[800px] lg:h-[400px] bg-[#134574] rounded-[19px] flex items-center justify-center">
-                 <form className=" flex flex-col justify-center gap-4">
+                 <form className=" flex flex-col justify-center gap-4 items-center">
 
                    <div className="flex items-center  gap-9 lg:gap-11">
                      <label htmlFor="" className="text-[10px] lg:text-[20px] text-white">Email</label>
@@ -37,6 +37,8 @@ const StudentLogin = () => {
                      <input type="password" className="py-4 px-3 rounded-[10px] w-[190px] sm:w-[230px] lg:w-[350px]" />
                    </div>
 
+                   <button className='flex items-center justify-center text-white text-[16px] mt-7'>Login with Google <FcGoogle style={{paddingLeft:"5px"}} size={40}/></button>
+                    
                  </form>
                </div>
              </div>
@@ -62,4 +64,4 @@ const StudentLogin = () => {
   )
 }
 
-export default StudentLogin;
+export default AdminDashboard;

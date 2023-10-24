@@ -1,18 +1,24 @@
 import {Routes,Route} from 'react-router-dom'
-import StudentLogin from './pages/StudentLogin'
-import AdminLogin from './pages/AdminLogin'
-import TutorLogin from './pages/TutorLogin'
-import SchoolStudentLogin from './pages/SchoolStudentLogin'
+import TutorLogin from './pages/Tutor/TutorLogin'
+import PupilsDashboard from './pages/PartnerSchoolStudents/PupilsDashboard'
+import HomePage from './pages/PartnerSchoolStudents/SchoolsHomePage'
+import StudentDashboard from './pages/Student/StudentDashboard'
+import StaffDashboard from './pages/Staff/StaffDashboard'
+import SchoolsHomePage from './pages/PartnerSchoolStudents/SchoolsHomePage'
+import AdminDashboard from './pages/Admin/AdminDashboard'
 
 
 const App = () => {
   return (
     <div>
       <Routes>
-        <Route path='/studentlogin' element={<StudentLogin/>}/>
-        <Route path='/adminlogin' element={<AdminLogin/>}/>
-        <Route path='/tutorlogin' element={<TutorLogin/>}/>
-        <Route path='/schoolstudentlogin' element={<SchoolStudentLogin/>}/>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/admin_dashboard' element={<AdminDashboard/>}/>
+        <Route path='/staff_dashboard' element={<StaffDashboard/>}/>
+        <Route path='/tutor_dashboard' element={<TutorLogin/>}/>
+        <Route path='/student_dashboard' element={<StudentDashboard/>}/>
+        <Route path='/schools_homepage' element={<SchoolsHomePage/>}/>
+        <Route path='/school_student_dashboard' element={<PupilsDashboard/>}/>
       </Routes>
     </div>
   )
