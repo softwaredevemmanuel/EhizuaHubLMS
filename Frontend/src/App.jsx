@@ -6,6 +6,7 @@ import StudentDashboard from './pages/Student/StudentDashboard'
 import StaffDashboard from './pages/Staff/StaffDashboard'
 import SchoolsHomePage from './pages/PartnerSchoolStudents/SchoolsHomePage'
 import AdminDashboard from './pages/Admin/AdminDashboard'
+import DashBoard from './pages/Admin/DashBoard'
 
 
 const App = () => {
@@ -13,7 +14,8 @@ const App = () => {
     <div>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/admin_dashboard' element={<AdminDashboard/>}/>
+        <Route path='/admin_login' element={<AdminDashboard/>}/>
+        <Route path='/admin_dashboard' element={<DashBoard/>}/>
         <Route path='/staff_dashboard' element={<StaffDashboard/>}/>
         <Route path='/tutor_dashboard' element={<TutorLogin/>}/>
         <Route path='/student_dashboard' element={<StudentDashboard/>}/>

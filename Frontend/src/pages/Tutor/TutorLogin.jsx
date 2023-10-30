@@ -1,12 +1,13 @@
 import Img from '../../../assets/tutor.png'
 import ehz from '../../../assets/Ehizua.png'
-
+import {IoIosHome} from 'react-icons/io'
 const TutorLogin = () => {
   return (
     <section className="w-full flex flex-col lg:flex-row h-screen">
        <div className="w-[100%] lg:w-5/12 h-[30%] flex lg:flex-col lg:h-[100vh] bg-white items-center">
-            <div className=' flex flex-col lg:flex-row items-center w-[300px] h-[20%] lg:ml-0 ml-[35%]'>
+            <div className=' flex flex-col lg:flex-row items-center w-[300px] h-[20%] lg:ml-0 ml-[35%] gap-10 justify-between'>
                 <img src={ehz} alt="" />
+                <div><IoIosHome size={32}/></div>
             </div>
             <div className=" flex justify-center  w-[100%] h-[80%] bg-white rounded-full lg:rounded-none">
                 <img className="fixed left-[40%] top-[20%] w-[100px] h-[100px] lg:relative lg:left-0 lg:top-8 lg:w-[584px] lg:h-[450px] " src={Img} alt="" />
