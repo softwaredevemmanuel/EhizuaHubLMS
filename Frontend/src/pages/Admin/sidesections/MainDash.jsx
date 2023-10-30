@@ -16,10 +16,10 @@ const MainDash = () => {
          </p>
         </p>
 
-        <section className="grid grid-cols-2 gap-6 ">
-            <div className="row-span-2 col-span-2 p-4 rounded-lg bg-[#486D8E] grid grid-cols-1 lg:grid-cols-2">
+        <section className="grid grid-cols-2  gap-6 ">
+            <div className="row-span-2 col-span-2 lg:p-4 rounded-lg bg-[#486D8E] grid grid-cols-1 lg:grid-cols-2">
 
-                <div className=' p-[6rem] grid grid-cols-1 lg:gap-1'>
+                <div className='p-[2rem] lg:p-[6rem] grid grid-cols-1 lg:gap-1'>
                     <p className='text-white font-bold  text-[15px] lg:h-[180px] xl:h-[100px]  lg:text-[30px]'>Elevate Your Learning with Every Click</p>
                     <button className='bg-white rounded-lg px-1 text-xs h-[50px] w-[100px] lg:p-0 text-pink-600 lg:w-[50%] lg:h-[70px]'>Create Memo</button>
                 </div>
